@@ -1,18 +1,18 @@
 package me.dio.service.impl;
 
 import me.dio.domain.model.User;
-import me.dio.domain.repository.UserRepository;
-import me.dio.service.UserService;
+import me.dio.domain.repository.RepositorioUsuario;
+import me.dio.service.ServicoUsuario;
 import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class ServicoUsuarioImpl implements ServicoUsuario {
 
-    private final UserRepository userRepository;
+    private final RepositorioUsuario userRepository;
 
-    public UserServiceImpl(UserRepository userRepository) {
+    public ServicoUsuarioImpl(RepositorioUsuario userRepository) {
         this.userRepository = userRepository;
     }
 

@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @OpenAPIDefinition(servers = { @Server(url = "/", description = "Default Server URL")})
 @SpringBootApplication
-public class Application {
+public class Aplicacao {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(Aplicacao.class, args);
 	}
 
 }

@@ -2,7 +2,7 @@ package me.dio.service;
 
 import me.dio.domain.model.User;
 
-public interface UserService {
+public interface ServicoUsuario {
 
     User findById(Long id);
 

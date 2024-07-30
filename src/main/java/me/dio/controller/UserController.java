@@ -1,7 +1,7 @@
 package me.dio.controller;
 
 import me.dio.domain.model.User;
-import me.dio.service.UserService;
+import me.dio.service.ServicoUsuario;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -12,9 +12,9 @@ import java.net.URI;
 @RequestMapping("/users")
 public class UserController {
 
-    private final UserService userService;
+    private final ServicoUsuario userService;
 
-    public UserController(UserService userService) {
+    public UserController(ServicoUsuario userService) {
         this.userService = userService;
     }
 
